@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 510">
+  <defs>
+    <radialGradient id="halo">
+      <stop stop-color="#7848de" stop-opacity=".56"/>
+      <stop offset=".65" stop-color="#6940b4" stop-opacity=".2"/>
+      <stop offset="1" stop-color="#6940b4" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="grid-fade">
+      <stop stop-color="#fff"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="27" height="27" patternUnits="userSpaceOnUse">
+      <path d="M27 0H0v27" fill="none" stroke="#bb9eff" stroke-opacity=".37"/>
+      <circle cx="1" cy="1" r="1.2" fill="#c9b4ff" fill-opacity=".6"/>
+    </pattern>
+    <mask id="grid-mask">
+      <ellipse cx="307" cy="234" rx="291" ry="228" fill="url(#grid-fade)"/>
+    </mask>
+    <linearGradient id="mint" x2=".8" y2="1">
+      <stop stop-color="#c0ffdc"/><stop offset="1" stop-color="#61d9ad"/>
+    </linearGradient>
+    <linearGradient id="blue" x2=".8" y2="1">
+      <stop stop-color="#a0c5ff"/><stop offset="1" stop-color="#6673f2"/>
+    </linearGradient>
+    <linearGradient id="lilac" x2=".8" y2="1">
+      <stop stop-color="#e5d8ff"/><stop offset="1" stop-color="#a78df9"/>
+    </linearGradient>
+    <linearGradient id="cream" x2=".8" y2="1">
+      <stop stop-color="#fff2bf"/><stop offset="1" stop-color="#ffd66f"/>
+    </linearGradient>
+    <linearGradient id="peach" x2=".8" y2="1">
+      <stop stop-color="#ffb098"/><stop offset="1" stop-color="#f66e7e"/>
+    </linearGradient>
+    <linearGradient id="pink" x2=".8" y2="1">
+      <stop stop-color="#ffaee6"/><stop offset="1" stop-color="#e575c1"/>
+    </linearGradient>
+    <linearGradient id="white" x2=".8" y2="1">
+      <stop stop-color="#fffcff"/><stop offset="1" stop-color="#d6d9ff"/>
+    </linearGradient>
+    <filter id="shadow" x="-25%" y="-20%" width="150%" height="160%">
+      <feDropShadow dx="0" dy="17" stdDeviation="15" flood-color="#080614" flood-opacity=".62"/>
+    </filter>
+    <g id="tile">
+      <rect x=".066" y=".066" width=".868" height=".868" rx=".085" stroke="#fff" stroke-opacity=".27" stroke-width=".021"/>
+      <path d="M.18.104H.82M.104.18V.8" fill="none" stroke="#fff" stroke-opacity=".27" stroke-width=".024" stroke-linecap="round"/>
+    </g>
+  </defs>
+
+  <ellipse cx="307" cy="234" rx="291" ry="228" fill="url(#halo)"/>
+  <path d="M0 0h600v510H0z" fill="url(#grid)" mask="url(#grid-mask)"/>
+  <g fill="none" stroke-width="1">
+    <ellipse cx="306" cy="245" rx="254" ry="106" transform="rotate(-21 306 245)" stroke="#bca3ff" opacity=".3"/>
+    <ellipse cx="306" cy="245" rx="256" ry="98" transform="rotate(23 306 245)" stroke="#a48af5" opacity=".33" stroke-dasharray="5 7"/>
+    <circle cx="306" cy="245" r="207" stroke="#9276d1" opacity=".2"/>
+  </g>
+  <g fill="#c1adff">
+    <circle cx="116" cy="333" r="4"/>
+    <circle cx="501" cy="118" r="5"/>
+    <circle cx="493" cy="328" r="3" opacity=".6"/>
+    <circle cx="187" cy="62" r="2.5" opacity=".7"/>
+    <circle cx="393" cy="437" r="2.5" opacity=".7"/>
+    <path d="M118 94c0 12 2 14 14 14-12 0-14 2-14 14 0-12-2-14-14-14 12 0 14-2 14-14Z"/>
+    <path d="M517 228c0 17 3 20 20 20-17 0-20 3-20 20 0-17-3-20-20-20 17 0 20-3 20-20Z" fill="#d5c2ff"/>
+  </g>
+  <path d="m83 204 8-8 8 8-8 8zm370 187 6-6 6 6-6 6z" fill="none" stroke="#a489ee" stroke-width="1.5"/>
+  <path d="m449 65 8 5-8 5-8-5z" fill="#a489ee" opacity=".7"/>
+
+  <g filter="url(#shadow)">
+    <path d="m308 57 153 87v174l-153 87-153-87V144Z" fill="#171327" stroke="#8370ae" stroke-width="2" stroke-linejoin="round"/>
+    <path d="m155 144 153 87 153-87M308 231v174" fill="none" stroke="#463960" stroke-width="2" stroke-linejoin="round"/>
+    <g transform="matrix(51 29 -51 29 308 57)">
+      <use href="#tile" fill="url(#lilac)"/>
+      <use href="#tile" x="1" fill="url(#cream)"/>
+      <use href="#tile" x="2" fill="url(#white)"/>
+      <use href="#tile" y="1" fill="url(#cream)"/>
+      <use href="#tile" x="1" y="1" fill="url(#white)"/>
+      <use href="#tile" x="2" y="1" fill="url(#mint)"/>
+      <use href="#tile" y="2" fill="url(#pink)"/>
+      <use href="#tile" x="1" y="2" fill="url(#mint)"/>
+      <use href="#tile" x="2" y="2" fill="url(#lilac)"/>
+    </g>
+    <g transform="matrix(51 29 0 58 155 144)">
+      <use href="#tile" fill="url(#blue)"/>
+      <use href="#tile" x="1" fill="url(#pink)"/>
+      <use href="#tile" x="2" fill="url(#lilac)"/>
+      <use href="#tile" y="1" fill="url(#lilac)"/>
+      <use href="#tile" x="1" y="1" fill="url(#blue)"/>
+      <use href="#tile" x="2" y="1" fill="url(#peach)"/>
+      <use href="#tile" y="2" fill="url(#pink)"/>
+      <use href="#tile" x="1" y="2" fill="url(#lilac)"/>
+      <use href="#tile" x="2" y="2" fill="url(#blue)"/>
+    </g>
+    <g transform="matrix(51 -29 0 58 308 231)">
+      <use href="#tile" fill="url(#cream)"/>
+      <use href="#tile" x="1" fill="url(#peach)"/>
+      <use href="#tile" x="2" fill="url(#mint)"/>
+      <use href="#tile" y="1" fill="url(#mint)"/>
+      <use href="#tile" x="1" y="1" fill="url(#cream)"/>
+      <use href="#tile" x="2" y="1" fill="url(#blue)"/>
+      <use href="#tile" y="2" fill="url(#peach)"/>
+      <use href="#tile" x="1" y="2" fill="url(#mint)"/>
+      <use href="#tile" x="2" y="2" fill="url(#pink)"/>
+    </g>
+    <path d="m155 144 153 87v174l-153-87Z" fill="#30104d" opacity=".13"/>
+  </g>
+  <path d="M86 303c-29 26-35 49-20 64 21 24 94 20 188-5" fill="none" stroke="#8d71ce" stroke-opacity=".55" stroke-linecap="round"/>
+  <circle cx="66" cy="367" r="3.5" fill="#a98af6"/>
+</svg>

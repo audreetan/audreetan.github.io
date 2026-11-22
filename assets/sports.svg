@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 200">
+  <defs>
+    <pattern id="strings" width="8" height="8" patternUnits="userSpaceOnUse">
+      <path fill="none" stroke="#dbfff0" stroke-opacity=".6" d="M8 0H0v8"/>
+    </pattern>
+    <clipPath id="ball"><circle cx="276" cy="113" r="44"/></clipPath>
+  </defs>
+  <path d="m73 158 90-93h141l43 93zM119 111h205M215 65l-29 93" fill="none" stroke="#95e0d0" stroke-width="2" opacity=".25"/>
+  <ellipse cx="209" cy="166" rx="144" ry="13" fill="#12393c" opacity=".68"/>
+  <g transform="translate(172 74) rotate(31)" stroke-linejoin="round">
+    <path d="M0 39v61" stroke="#102e36" stroke-width="12" stroke-linecap="round"/>
+    <path d="M0 39v61" stroke="#d3f9eb" stroke-width="6" stroke-linecap="round"/>
+    <rect x="-8" y="81" width="16" height="45" rx="5" fill="#c7a9ff" stroke="#102e36" stroke-width="3"/>
+    <path d="M-6 90l12 5m-12 3 12 5m-12 3 12 5m-12 3 12 5" stroke="#7866a8" stroke-width="2"/>
+    <ellipse rx="30" ry="42" fill="#1e6265" stroke="#102e36" stroke-width="5"/>
+    <ellipse rx="27" ry="39" fill="url(#strings)" stroke="#a0f4d9" stroke-width="5"/>
+  </g>
+  <circle cx="276" cy="113" r="44" fill="#fff4cf"/>
+  <g clip-path="url(#ball)" stroke="#18353d" stroke-width="2.6">
+    <path d="M251 69c14 2 26 10 37 23-14 7-21 15-23 27-14-9-27-12-41-8" fill="#86dfcc"/>
+    <path d="M265 119c5 14 14 26 27 37l23-13c-18-10-28-24-32-39" fill="#b39bee"/>
+    <path d="M288 92c19-7 37-7 50-1l-15 23c-12-7-22-9-34-6" fill="#ffd786"/>
+    <path d="M265 119c-4 15-12 24-23 31" fill="none"/>
+  </g>
+  <circle cx="276" cy="113" r="44" fill="none" stroke="#18353d" stroke-width="3"/>
+  <g transform="translate(236 44) rotate(30)" stroke="#18353d" stroke-width="2.5" stroke-linejoin="round">
+    <path fill="#efefe7" d="m-10 5-10-25 9 1 6-5 6 4 7-3 6 5 8 1-13 24z"/>
+    <path fill="none" d="M-12-18-5 6M-4-22 0 6M5-21 4 6M14-18 8 6"/>
+    <path fill="#f9cb7c" d="M-10 5H9v6a9.5 9.5 0 0 1-19 0z"/>
+  </g>
+  <path fill="none" stroke="#aff5df" stroke-width="2" stroke-linecap="round" d="m105 68-13-4m20-6-10-10m226 87 11 4m-15 5 8 7"/>
+</svg>
