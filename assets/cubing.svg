@@ -1,36 +1,36 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 200">
   <defs>
-    <g id="cube" stroke="#211939" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-      <path fill="#e9ddff" d="m0 24 42-24 42 24-42 24z"/>
-      <path fill="#aa8cf3" d="M0 24v48l42 24V48z"/>
-      <path fill="#8ae2c6" d="M42 48v48l42-24V24z"/>
+    <g id="cube" stroke="#302a23" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <path fill="#fff5dc" d="m0 24 42-24 42 24-42 24z"/>
+      <path fill="#f8d171" d="M0 24v48l42 24V48z"/>
+      <path fill="#9fc88a" d="M42 48v48l42-24V24z"/>
     </g>
     <path id="halves" fill="none" d="m21 12 42 24v48M63 12 21 36v48M0 48l42 24 42-24"/>
   </defs>
-  <ellipse cx="215" cy="168" rx="146" ry="15" fill="#342451" opacity=".65"/>
-  <circle cx="212" cy="96" r="68" fill="#785daa" opacity=".66"/>
+  <ellipse cx="215" cy="168" rx="146" ry="15" fill="#d4c9a9" opacity=".65"/>
+  <circle cx="212" cy="96" r="68" fill="#f8df9b" opacity=".66"/>
   <g transform="translate(75 91) scale(.68)">
     <use href="#cube"/>
     <path d="m1 24 41-23 41 23-41 24z" fill="#ffcd81"/>
-    <path d="M1 25v47l41 23V48z" fill="#e991ba"/>
+    <path d="M1 25v47l41 23V48z" fill="#e87560"/>
   </g>
-  <g transform="translate(145 41) scale(1.34)" stroke="#211939" stroke-width="2.5" stroke-linejoin="round">
+  <g transform="translate(145 41) scale(1.34)" stroke="#302a23" stroke-width="2.5" stroke-linejoin="round">
     <use href="#cube"/>
     <path fill="#ffc983" d="m14 16 14-8 14 8-14 8z"/>
-    <path fill="#f6afd7" d="m42 16 14-8 14 8-14 8z"/>
-    <path fill="#a28bfa" d="m42 32 14-8 14 8-14 8z"/>
-    <path fill="#ffa4cf" d="m0 40 14 8v16L0 56z"/>
-    <path fill="#8faffb" d="m14 48 14 8v16l-14-8zm14 24 14 8v16l-14-8z"/>
+    <path fill="#efac7a" d="m42 16 14-8 14 8-14 8z"/>
+    <path fill="#f9cf59" d="m42 32 14-8 14 8-14 8z"/>
+    <path fill="#ec8b72" d="m0 40 14 8v16L0 56z"/>
+    <path fill="#e79356" d="m14 48 14 8v16l-14-8zm14 24 14 8v16l-14-8z"/>
     <path fill="#ffe09d" d="m56 40 14-8v16l-14 8zm14 24 14-8v16l-14 8z"/>
-    <path fill="#90acff" d="m42 64 14-8v16l-14 8z"/>
+    <path fill="#e89352" d="m42 64 14-8v16l-14 8z"/>
     <path fill="none" d="m14 16 42 24v48M28 8l42 24v48M56 8 14 32v48M70 16 28 40v48M0 40l42 24 42-24M0 56l42 24 42-24"/>
   </g>
-  <g transform="translate(282 87) scale(.77)" stroke="#211939" stroke-width="2.5" stroke-linejoin="round">
+  <g transform="translate(282 87) scale(.77)" stroke="#302a23" stroke-width="2.5" stroke-linejoin="round">
     <use href="#cube"/>
     <path fill="#ffd785" d="m42 0 21 12-21 12-21-12z"/>
-    <path fill="#e891c6" d="m0 48 21 12v24L0 72z"/>
-    <path fill="#aab8ff" d="m63 60 21-12v24L63 84z"/>
+    <path fill="#e87560" d="m0 48 21 12v24L0 72z"/>
+    <path fill="#a2cb87" d="m63 60 21-12v24L63 84z"/>
     <use href="#halves"/>
   </g>
-  <path fill="#dfcbff" d="M107 44c0 9 2 11 11 11-9 0-11 2-11 11 0-9-2-11-11-11 9 0 11-2 11-11Zm221 3c0 7 2 9 9 9-7 0-9 2-9 9 0-7-2-9-9-9 7 0 9-2 9-9Z"/>
+  <path fill="#da8438" d="M107 44c0 9 2 11 11 11-9 0-11 2-11 11 0-9-2-11-11-11 9 0 11-2 11-11Zm221 3c0 7 2 9 9 9-7 0-9 2-9 9 0-7-2-9-9-9 7 0 9-2 9-9Z"/>
 </svg>
