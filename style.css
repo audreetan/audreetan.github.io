@@ -16,7 +16,7 @@ html {
   scroll-behavior: smooth;
 }
 
-body, figure, h1, h2, h3, p {
+body, h1, h2, h3, p {
   margin: 0;
 }
 
@@ -33,7 +33,7 @@ a {
   color: inherit;
 }
 
-a:focus-visible {
+a:focus-visible, button:focus-visible {
   outline: 2px solid #457643;
   outline-offset: 5px;
 }
@@ -150,32 +150,45 @@ a:focus-visible {
 
 .hero-art {
   position: relative;
-  isolation: isolate;
 }
 
-.hero-art img {
+.clicker-demo {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  border-radius: .4rem;
+  color: inherit;
+  background: transparent;
+  font: inherit;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+
+.clicker-art {
+  display: block;
   width: 100%;
   height: auto;
 }
 
-.hero-art figcaption {
+.clicker-label {
   position: absolute;
-  inset: auto 5% 7.5% auto;
-  display: grid;
-  gap: .15rem;
+  inset: auto 6% 7.5% auto;
   padding: .6rem .9rem;
   border: 1px solid #24241d;
   border-radius: .25rem;
-  color: #45453d;
   background: #fff;
-  font-size: .8125rem;
+  font-size: .9375rem;
+  font-weight: 750;
 }
 
-.hero-art figcaption strong {
-  color: #181815;
-  font-size: 1.125rem;
-  line-height: 1.15;
-  letter-spacing: -.025em;
+.clicker-demo:is(:hover, :focus-visible) .clicker-label {
+  background: #ffe698;
+}
+
+.clicker-demo:active .clicker-cap {
+  transform: translateY(17px);
 }
 
 .interests, .projects, .next-section {
@@ -385,7 +398,7 @@ h2 {
     margin-top: 3rem;
   }
 
-  .hero-art figcaption {
+  .clicker-label {
     inset-inline-end: 0;
     padding: .4rem .6rem;
   }

@@ -6,8 +6,21 @@
   <meta name="theme-color" content="#ffffff">
   <meta name="description" content="Meet Audree Kreisler Tan. She solves Rubik’s Cubes, designs 3D-printed clickers, and is building an open-source robot called Micro Bot.">
   <title>Audree Kreisler Tan</title>
+  <link rel="canonical" href="https://audreetan.github.io/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Audree Kreisler Tan">
+  <meta property="og:description" content="Rubik’s Cubes, 3D-printed clickers, and an open-source robot in the making. Meet Audree and try her interactive clicker.">
+  <meta property="og:url" content="https://audreetan.github.io/">
+  <meta property="og:image" content="https://audreetan.github.io/assets/social-preview.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="An illustrated cream and orange cat clicker against a yellow spotlight">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="assets/cube-mark.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" sizes="180x180">
   <link rel="stylesheet" href="style.css">
+  <script src="clicker.js" defer></script>
 </head>
 <body id="top">
   <a class="skip-link" href="#main">Skip to content</a>
@@ -30,13 +43,70 @@
     <section class="page-width hero" aria-labelledby="name">
       <div class="hero-copy">
         <h1 id="name">Audree <span>Kreisler Tan</span></h1>
-        <p>I’m Eidee’s sister. I love solving Rubik’s Cubes, playing badminton, and making things I can hold, play with, or share.</p>
+        <p>I’m Eidee’s sister. I’ve solved Rubik’s Cubes from 1×1 to 8×8, and I love badminton and making things I can share.</p>
         <a class="button" href="#interests">Explore my interests</a>
       </div>
-      <figure class="hero-art">
-        <img src="assets/hero-cube.svg" alt="" width="600" height="510" fetchpriority="high">
-        <figcaption><span>Rubik’s Cubes solved</span> <strong>1×1 to 8×8</strong></figcaption>
-      </figure>
+      <div class="hero-art">
+        <button class="clicker-demo" type="button">
+          <svg class="clicker-art" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 510" width="600" height="510" aria-hidden="true">
+            <defs>
+              <radialGradient id="clicker-spotlight">
+                <stop stop-color="#ffdc67" stop-opacity=".86"/>
+                <stop offset=".78" stop-color="#ffdf77" stop-opacity=".43"/>
+                <stop offset="1" stop-color="#ffe796" stop-opacity="0"/>
+              </radialGradient>
+              <linearGradient id="clicker-shell" x2=".8" y2="1">
+                <stop stop-color="#fffef4"/><stop offset="1" stop-color="#f2e5c9"/>
+              </linearGradient>
+              <linearGradient id="clicker-base" x2=".8" y2="1">
+                <stop stop-color="#f9a66f"/><stop offset="1" stop-color="#e37450"/>
+              </linearGradient>
+              <pattern id="clicker-dots" width="12" height="12" patternUnits="userSpaceOnUse">
+                <circle cx="2" cy="2" r="1.15" fill="#b3873e" opacity=".46"/>
+              </pattern>
+              <path id="clicker-head" d="M192 224c0-20 8-40 23-57l-1-57c0-13 12-19 23-10l46 34c15-2 35-2 50 0l45-34c11-8 24-3 23 10l-1 57c15 17 23 36 23 57 0 56-51 85-115 85s-116-29-116-85Z"/>
+              <clipPath id="clicker-head-clip"><use href="#clicker-head"/></clipPath>
+            </defs>
+            <circle cx="307" cy="240" r="219" fill="url(#clicker-spotlight)"/>
+            <circle cx="307" cy="235" r="174" fill="url(#clicker-dots)" opacity=".48"/>
+            <ellipse cx="308" cy="247" rx="233" ry="113" transform="rotate(-17 308 247)" fill="none" stroke="#b59757" stroke-width="1.5" stroke-dasharray="4 8" opacity=".58"/>
+            <circle cx="469" cy="137" r="24" fill="#e9684d"/>
+            <circle cx="143" cy="338" r="13" fill="#a4c77f"/>
+            <circle cx="469" cy="344" r="4" fill="#98ab65"/>
+            <circle cx="156" cy="156" r="4" fill="#d8894d"/>
+            <path d="M153 208c0 12 3 15 15 15-12 0-15 3-15 15 0-12-3-15-15-15 12 0 15-3 15-15Z" fill="#e28d48"/>
+            <path d="M465 211c0 10 2 12 12 12-10 0-12 2-12 12 0-10-2-12-12-12 10 0 12-2 12-12Z" fill="#6f9a61"/>
+            <ellipse cx="308" cy="407" rx="161" ry="21" fill="#d9c8a5" opacity=".53"/>
+            <g stroke="#2b2a22" stroke-width="5" stroke-linejoin="round">
+              <path d="M174 326c0-26 59-47 134-47s134 21 134 47v35c0 27-59 48-134 48s-134-21-134-48Z" fill="url(#clicker-base)"/>
+              <ellipse cx="308" cy="326" rx="134" ry="47" fill="#fac08d"/>
+              <ellipse cx="308" cy="321" rx="94" ry="31" fill="#5d5545"/>
+              <path d="M217 328c14 13 49 21 91 21s77-8 91-21" fill="none" stroke="#ffd6a3" stroke-width="2"/>
+              <path d="M280 281h56v42c0 7-13 13-28 13s-28-6-28-13Z" fill="#a8c87f"/>
+              <path d="M291 313c10 4 24 4 34 0" fill="none" stroke="#607d4e" stroke-width="2.5" stroke-linecap="round"/>
+            </g>
+            <path d="M187 365c21 16 69 28 121 28s100-12 121-28" fill="none" stroke="#b7583f" stroke-width="2.5" stroke-linecap="round"/>
+            <path d="M281 382c17 2 37 2 54 0" fill="none" stroke="#ffdeaf" stroke-width="4" stroke-linecap="round"/>
+            <g class="clicker-cap">
+              <use href="#clicker-head" fill="url(#clicker-shell)"/>
+              <g clip-path="url(#clicker-head-clip)">
+                <path d="M183 98h87c8 26 10 48-6 64-19 20-48 20-73 15z" fill="#ed995e"/>
+                <path d="M341 108h76v76c-19 4-36-5-45-21-8-16-17-30-31-31Z" fill="#acd08b"/>
+                <path d="M189 248c20 37 65 51 119 51 53 0 94-14 118-51v65H189z" fill="#deca9f" opacity=".44"/>
+              </g>
+              <use href="#clicker-head" fill="none" stroke="#2b2a22" stroke-width="5"/>
+              <path d="m229 118 31 24-30 10zm157 0-30 23 29 11z" fill="#f8c4a0" stroke="#76604a" stroke-width="2.5" stroke-linejoin="round"/>
+              <path d="M269 209v9m78-9v9" stroke="#272820" stroke-width="9" stroke-linecap="round"/>
+              <path d="M302 225c3-3 9-3 12 0-1 4-3 7-6 7s-5-3-6-7Z" fill="#674637"/>
+              <path d="M308 232c0 9-11 12-16 6m16-6c0 9 11 12 16 6" fill="none" stroke="#674637" stroke-width="3.25" stroke-linecap="round"/>
+              <ellipse cx="249" cy="235" rx="15" ry="8" fill="#ef997b" opacity=".63"/>
+              <ellipse cx="367" cy="235" rx="15" ry="8" fill="#ef997b" opacity=".63"/>
+              <path d="m217 226 14 3m-14 7 14-2m168-8-14 3m14 7-14-2" fill="none" stroke="#7a684f" stroke-width="2.5" stroke-linecap="round"/>
+            </g>
+          </svg>
+          <span class="clicker-label">Press to click</span>
+        </button>
+      </div>
     </section>
 
     <section class="page-width interests" id="interests" aria-labelledby="interests-title">
@@ -108,7 +178,7 @@
           </div>
           <div class="card-copy">
             <h3>The Printing Factory</h3>
-            <p>I design clickers and make them on my Bambu Lab 3D printer. I get to design both how each clicker looks and how it feels to press.</p>
+            <p>I design cute character clickers and print them on my Bambu Lab 3D printer. Some of my friends bought them just because the buttons are so satisfying to click.</p>
           </div>
         </article>
         <article class="interest-card project-card">
